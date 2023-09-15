@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #f2f9f1;
+    font-family: "Space Mono", Roboto, Georgia, 'Times New Roman', Times, serif;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 header {
     display: flex;
     justify-content: flex-start;
@@ -17,14 +26,15 @@ header {
     height: 20rem;
     margin-right: 1rem;
     border-radius: 1rem;
-    border: 1px solid cyan;
-    box-shadow: 5px 5px 5px royalblue;
+    border: 1px solid #b6cdbd;
+    box-shadow: 5px 5px 5px #5c715e;
 }
 
 nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-bottom: 6rem;
 }
 
 nav li {
