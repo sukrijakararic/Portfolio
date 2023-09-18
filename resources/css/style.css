@@ -132,5 +132,27 @@ nav li {
     border: 1px solid #5c715e;
     margin: 2rem;
     border-radius: 2rem;
-
+    justify-content: space-evenly;
+    background-color: #b6cdbd;
   }
+
+  .project1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+    border: 1px solid #5c715e;
+    flex-direction: column;
+    background-color: #ddeedf;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 2px;
+
+ }
+
+ .project1 img {
+    width: 25rem;
+    height: 15rem;
+    margin: 1rem;
+    border: #5c715e 1px solid;
+    box-shadow: 2px 2px 2px;
+    border-radius: 1rem;
+ }
