@@ -9,6 +9,10 @@ body{
     font-family: "Space Mono", Roboto, Georgia, 'Times New Roman', Times, serif;
 }
 
+a {
+    color: black;
+}
+
 a:hover {
     text-decoration: none;
 }
@@ -24,7 +28,7 @@ header {
 .shuki {
     width: 15rem;
     height: 20rem;
-    margin-right: 1rem;
+    margin: 0 1rem;
     border-radius: 1rem;
     border: 1px solid #b6cdbd;
     box-shadow: 5px 5px 5px #5c715e;
@@ -34,7 +38,7 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-bottom: 6rem;
+    margin-bottom: 1rem;
 }
 
 nav li {
@@ -44,6 +48,64 @@ nav li {
 
 .about-me {
     display: flex;
-    margin: auto;
+    margin-top: 4rem;
 
 }
+
+.about {
+    border: 1px solid #5c715e;
+    background-color: #b6cdbd;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 2px;
+}
+
+.about h2,p {
+    margin-left: 1rem;
+    padding: 1rem;
+}
+
+.skill-title{
+    margin-top: 2rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border: 1px solid #5c715e;
+    margin: 3rem 1rem;
+    border-radius: 2rem;
+    background-color: #b6cdbd;
+    box-shadow: 2px 2px 2px;
+}
+
+.skills-container img {
+    width: 4rem;
+    height: 4rem;
+    margin: 2rem;
+}
+
+#htmllogo {
+    width: 6rem;
+    height: 5rem;
+}
+
+
+@media only screen and (max-width: 597px) {
+    .about-me {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .shuki {
+        margin-bottom: 1rem;
+    }
+    .about {
+        margin: 0 1rem;
+    }
+    .about h2,p {
+        font-size: 14px;;
+    }
+  }
