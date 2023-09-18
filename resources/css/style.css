@@ -38,9 +38,9 @@ nav li {
     margin: 1rem;
 }
 
-.spacer {
+.spacer-nav {
     border: 1px solid #5c715e;
-    margin: 2rem;
+    margin: 0 1rem;
 }
 
 
@@ -72,6 +72,11 @@ nav li {
 .about h2,p {
     margin-left: 1rem;
     padding: 1rem;
+}
+
+.spacer-skill {
+    border: 1px solid #5c715e;
+    margin: 2rem 1rem;
 }
 
 .skill-title{
