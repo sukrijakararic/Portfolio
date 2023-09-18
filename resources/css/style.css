@@ -44,12 +44,13 @@ nav li {
 }
 
 
+
 /* Styling for the About me page & skills */
 
 .shuki {
     width: 15rem;
     height: 20rem;
-    margin: 0 1rem;
+    margin: 0 2rem;
     border-radius: 1rem;
     border: 1px solid #b6cdbd;
     box-shadow: 5px 5px 5px #5c715e;
@@ -64,7 +65,7 @@ nav li {
 .about {
     border: 1px solid #5c715e;
     background-color: #b6cdbd;
-    margin-right: 1rem;
+    margin-right: 2rem;
     border-radius: 1rem;
     box-shadow: 2px 2px 2px;
 }
@@ -79,7 +80,7 @@ nav li {
     margin: 2rem 1rem;
 }
 
-.skill-title{
+h3 {
     margin-top: 2rem;
     text-align: center;
     text-decoration: underline;
@@ -90,7 +91,7 @@ nav li {
     justify-content: space-evenly;
     flex-wrap: wrap;
     border: 1px solid #5c715e;
-    margin: 3rem 1rem;
+    margin: 3rem 2rem;
     border-radius: 2rem;
     background-color: #b6cdbd;
     box-shadow: 2px 2px 2px;
@@ -126,6 +127,11 @@ nav li {
 
   /* Styling for the Projects page */
 
+  .spacer-projects {
+    border: 1px solid #5c715e;
+    margin: 0 1rem 3rem;
+  }
+
   .projects-container {
     display: flex;
     flex-wrap: wrap;
@@ -134,6 +140,7 @@ nav li {
     border-radius: 2rem;
     justify-content: space-evenly;
     background-color: #b6cdbd;
+    padding: 5rem;
   }
 
   .project1 {
@@ -145,6 +152,7 @@ nav li {
     background-color: #ddeedf;
     border-radius: 1rem;
     box-shadow: 2px 2px 2px;
+    flex-shrink: 5px;
 
  }
 
@@ -155,4 +163,14 @@ nav li {
     border: #5c715e 1px solid;
     box-shadow: 2px 2px 2px;
     border-radius: 1rem;
+ }
+
+ .project1 p {
+    padding: 3px;
+ }
+
+ .project1 li {
+    text-decoration: none;
+    list-style-type: circle;
+    margin-left: 3rem;
  }
