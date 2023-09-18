@@ -141,6 +141,7 @@ h3 {
     justify-content: space-evenly;
     background-color: #b6cdbd;
     padding: 4rem;
+    box-shadow: 2px 2px 2px;
   }
 
   .project {
