@@ -140,10 +140,10 @@ h3 {
     border-radius: 2rem;
     justify-content: space-evenly;
     background-color: #b6cdbd;
-    padding: 5rem;
+    padding: 4rem;
   }
 
-  .project1 {
+  .project {
     display: flex;
     flex-wrap: wrap;
     margin: 1rem;
@@ -156,7 +156,7 @@ h3 {
 
  }
 
- .project1 img {
+ .project img {
     width: 25rem;
     height: 15rem;
     margin: 1rem;
@@ -165,11 +165,11 @@ h3 {
     border-radius: 1rem;
  }
 
- .project1 p {
+ .project p {
     padding: 3px;
  }
 
- .project1 li {
+ .project li {
     text-decoration: none;
     list-style-type: circle;
     margin-left: 3rem;
@@ -177,16 +177,23 @@ h3 {
 
  @media only screen and (max-width: 530px) {
 
-    .project1 img{
+    .project img{
         width: 245px;
-        height: 13rem;
+        height: 12rem;
     }
- 
 }
 
 @media only screen and (max-width: 375px) {
-    .project1 img {
+    .project img {
         width: 250px;
         height: 10rem;
     }
+
+}
+
+@media only screen and (max-width: 1623px) {
+    .projects-container {
+        padding: 2rem;
+    }
+    
 }
