@@ -1,3 +1,4 @@
+/* General styling for the entire portfolio*/
 * {
     margin: 0;
     padding: 0;
@@ -25,15 +26,6 @@ header {
     margin-left: 1rem;
 }
 
-.shuki {
-    width: 15rem;
-    height: 20rem;
-    margin: 0 1rem;
-    border-radius: 1rem;
-    border: 1px solid #b6cdbd;
-    box-shadow: 5px 5px 5px #5c715e;
-}
-
 nav {
     display: flex;
     justify-content: flex-end;
@@ -44,6 +36,23 @@ nav {
 nav li {
     display: inline flex;
     margin: 1rem;
+}
+
+.spacer {
+    border: 1px solid #5c715e;
+    margin: 2rem;
+}
+
+
+/* Styling for the About me page & skills */
+
+.shuki {
+    width: 15rem;
+    height: 20rem;
+    margin: 0 1rem;
+    border-radius: 1rem;
+    border: 1px solid #b6cdbd;
+    box-shadow: 5px 5px 5px #5c715e;
 }
 
 .about-me {
@@ -108,4 +117,15 @@ nav li {
     .about h2,p {
         font-size: 14px;;
     }
+  }
+
+  /* Styling for the Projects page */
+
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #5c715e;
+    margin: 2rem;
+    border-radius: 2rem;
+
   }
