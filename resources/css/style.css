@@ -174,3 +174,19 @@ h3 {
     list-style-type: circle;
     margin-left: 3rem;
  }
+
+ @media only screen and (max-width: 530px) {
+
+    .project1 img{
+        width: 245px;
+        height: 13rem;
+    }
+ 
+}
+
+@media only screen and (max-width: 375px) {
+    .project1 img {
+        width: 250px;
+        height: 10rem;
+    }
+}
