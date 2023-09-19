@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Space+Mono&display=swap" rel="stylesheet">
-    <script src="./script.js" async></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./resources/css/style.css">
     <title>Sukrija's Portfolio</title>
 </head>
@@ -28,7 +28,7 @@
 
     <div class="spacer-nav" role="complementary"></div>
 
-<div class="about-me">
+<div data-aos="fade-down" class="about-me">
 
         <div class="photo">
             <img class="shuki" src="./resources/images/proffesional-pic.jpg" alt="A pic of Sukrija">
@@ -48,7 +48,7 @@
 
     <h3>Skills</h3>
 
-    <div class="skills-container">
+    <div data-aos="fade-down" class="skills-container">
         <img id="htmllogo" src="./resources/images/htmllogo.png" alt="A logo of HTML">
         <img src="./resources/images/csslogo.png" alt="A logo of CSS">
         <img src="./resources/images/jslogo.png" alt="A logo of JavaScript">
@@ -57,6 +57,66 @@
         <img src="./resources/images/bashlogo.png" alt="A logo of Bash">
 
     </div>
-    
+
+    <div class="spacer-projects" role="complementary"></div>
+
+    <h3>Check out my work!</h3>
+
+    <div data-aos="fade-up" class="projects-container" role="complementary">
+        <div class="project">
+            <img src="./resources/images/project1-milkshakegen.png" alt="The Milkshake Generator">
+            
+            <p id="project-description">This project was all about using JS <br> to come up with a random way <br> to generate a milkshake for the user <br> by taking elements from an array <br> and
+                generating a random milkshake <br> every time you click the button
+            </p>
+
+            <div class="link-container">
+
+                <div class="fixed">
+                    <p><a href="https://github.com/sukrijakararic/Milkshake-Generator" target="_blank">See the code!</a></p>
+                </div>
+
+                <div class="fixed">
+                    <p><a href="https://sukrijakararic.github.io/Milkshake-Generator/" target="_blank">view it live</a></p>
+                </div>
+
+            </div>
+
+            <p id="built-with">Built with:</p>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <img src="./resources/images/project2-gonefishinclub.png" alt="Gone Fishin' Club">
+            
+            <p></p>
+            <p><a href="https://github.com/sukrijakararic/The-Gone-Fishin-Club" target="_blank">See the code!</a></p>
+            <p><a href="https://sukrijakararic.github.io/The-Gone-Fishin-Club/" target="_blank">Check out the live deployment :)</a></p>
+            <p>Built with:</p>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <img src="./resources/images/project3-BeeCompany.png" alt="The Bee Cpmpany">
+            
+            <p><a href="https://github.com/sukrijakararic/The-Bee-Company" target="_blank">See the code!</a></p>
+            <p><a href="https://sukrijakararic.github.io/The-Bee-Company/" target="_blank">Check out the live deployment :)</a></p>
+            <p>Built with:</p>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+            </ul>
+        </div>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
 </body>
 </html>
