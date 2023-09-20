@@ -293,6 +293,8 @@ h3 {
     padding: 10px;
     background-color: #f2f9f1;
     box-shadow: 2px 2px 2px;
+    margin-bottom: .8rem;
+    margin-top: .5rem;
 }
 
 .link-container button:hover {
@@ -313,6 +315,7 @@ h3 {
     text-decoration: none;
     list-style-type: circle;
     margin-left: 3rem;
+    
  }
 
 
