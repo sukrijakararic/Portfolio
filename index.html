@@ -24,8 +24,9 @@
         <ul data-aos="fade-left"
         data-aos-offset="300"
         data-aos-easing="ease-in-sine">
+        <button id="dark-mode" class="drkbtn"><img src="/resources/images/moon4.png"></button>
             <li><a href="#">About Me</a></li>
-            <li><a href="projects.html">Projects</a></li>
+            <li><a href="#proj">Projects</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
@@ -84,7 +85,7 @@
 
     <h3 data-aos="fade-left">Check out my work!</h3>
 
-    <div data-aos="fade-up" class="projects-container" role="complementary">
+    <div data-aos="fade-up" class="projects-container" role="complementary" id="proj">
         <div class="project" data-aos="fade-zoom-in"
         data-aos-easing="ease-in-back"
         data-aos-delay="300"
@@ -145,9 +146,13 @@
                 <li>CSS3</li>
             </ul>
         </div>
+
+        <script src="/script.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
-          AOS.init();
+          AOS.init({
+            once: true
+          });
         </script>
 </body>
 </html>

@@ -7,11 +7,15 @@
 
 body{
     background-color: #f2f9f1;
-    font-family: "Space Mono", Roboto, Georgia, 'Times New Roman', Times, serif;
+    font-family: "Space Mono", Georgia, 'Times New Roman', Times, serif;
 }
 
 a {
     color: black;
+}
+
+.dark-mode a {
+    color: #cad2c5;
 }
 
 a:hover {
@@ -24,6 +28,47 @@ header {
     align-items: center;
     margin-top: 1vh;
     margin-left: 1rem;
+}
+
+.dark-mode {
+    background-color: #354f52;
+    color: #d8f3dc;
+    
+}
+
+.dark-mode h1 {
+    color: #cad2c5;
+}
+
+.drkbtn {
+    text-decoration: none;
+    border-radius: 1rem;
+    padding: 10px;
+    background-color: #b6cdbd;
+    box-shadow: 2px 2px 2px black;
+    margin-top: 1rem;
+}
+
+.dark-mode .drkbtn {
+    background-color: #52796f;
+}
+
+.drkbtn img {
+    width: 1rem;
+    height: 1rem;
+}
+
+.drkbtn:hover {
+    cursor: pointer;
+    background-color: #ddeedf;
+}
+
+.drkbtn:active {
+    box-shadow: none;
+}
+
+.dark-mode .drkbtn:hover {
+    background-color: #84a98c;
 }
 
 nav {
@@ -43,6 +88,10 @@ nav li {
     margin: 0 1rem;
 }
 
+.dark-mode .spacer-nav {
+    border: 1px solid #cad2c5;
+}
+
 
 
 /* Styling for the About me page & skills */
@@ -54,6 +103,11 @@ nav li {
     border-radius: 1rem;
     border: 1px solid #b6cdbd;
     box-shadow: 5px 5px 5px #5c715e;
+}
+
+.dark-mode .shuki {
+    box-shadow: 5px 5px 5px black;
+    border: 1px solid #354f52;
 }
 
 .about-me {
@@ -70,6 +124,12 @@ nav li {
     box-shadow: 2px 2px 2px;
 }
 
+.dark-mode .about {
+    background-color: #52796f;
+    box-shadow: 2px 2px 2px black;
+    border: 1px solid #354f52;
+}
+
 .about h2,p {
     margin-left: 1rem;
     padding: 1rem;
@@ -78,6 +138,10 @@ nav li {
 .spacer-skill {
     border: 1px solid #5c715e;
     margin: 2rem 1rem;
+}
+
+.dark-mode .spacer-skill {
+    border: 1px solid #cad2c5;
 }
 
 h3 {
@@ -90,11 +154,17 @@ h3 {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    border: 1px solid #5c715e;
+    border: 1px solid;
     margin: 3rem 2rem;
     border-radius: 2rem;
     background-color: #b6cdbd;
     box-shadow: 2px 2px 2px;
+}
+
+.dark-mode .skills-container {
+    background-color: #52796f;
+    border: 1px solid #354f52;
+    box-shadow: 2px 2px 2px black;
 }
 
 .skills-container img {
@@ -133,6 +203,10 @@ h3 {
     margin: 0 1rem 1rem;
   }
 
+  .dark-mode .spacer-projects {
+    border: 1px solid #cad2c5;
+  }
+
   .projects-container {
     display: flex;
     flex-wrap: wrap;
@@ -145,6 +219,12 @@ h3 {
     box-shadow: 2px 2px 2px;
   }
 
+  .dark-mode .projects-container {
+    background-color: #52796f;
+    border: 1px solid #354f52;
+    box-shadow: 2px 2px 2px black;
+  }
+
   .project {
     display: flex;
     flex-wrap: wrap;
@@ -155,9 +235,13 @@ h3 {
     border-radius: 1rem;
     box-shadow: 2px 2px 2px;
     flex-shrink: 5px;
-
  }
 
+ .dark-mode .project {
+    background-color: #84a98c;
+    border: 1px solid #354f52;
+    box-shadow: 2px 2px 2px black;
+ }
  .project img {
     width: 25rem;
     height: 15rem;
@@ -165,6 +249,11 @@ h3 {
     border: #5c715e 1px solid;
     box-shadow: 2px 2px 2px;
     border-radius: 1rem;
+ }
+
+ .dark-mode .project img {
+    box-shadow: 2px 2px 2px black;
+    border: 1px solid #354f52;
  }
 
  .project p {
