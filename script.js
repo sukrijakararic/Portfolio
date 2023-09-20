@@ -8,4 +8,6 @@ function darkmode () {
     } document.body.classList.remove('dark-mode');
 };
 
-dark.onclick = darkmode
+
+
+dark.addEventListener('click',darkmode)
