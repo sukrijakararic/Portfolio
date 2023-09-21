@@ -15,7 +15,7 @@ a {
 }
 
 .dark-mode a {
-    color: #cad2c5;
+    color: #fefae0;
 }
 
 a:hover {
@@ -32,7 +32,7 @@ header {
 
 .dark-mode {
     background-color: #2f3e46;
-    color: #d8f3dc;
+    color: #fefae0;
     
 }
 
@@ -286,13 +286,56 @@ h2 {
  .project p {
     padding: 3px;
  }
+.description-container {
+    width: 400px;
+}
 
  #project-description {
     display: list-item;
     list-style-type: circle;
     list-style-position: outside;
     margin-left: 2rem;
+    width: 400px;
     
+ }
+
+ #built-with {
+    margin: .8rem;
+ }
+
+#built-with-fish {
+    margin: 3.7rem 0 .8rem .8rem;
+}
+
+#built-with-bees {
+    margin: 5rem 0 .8rem .8rem;
+}
+
+ .project ul {
+    display:  inline-flex;
+    justify-content: space-evenly;
+ }
+
+ .project li {
+    text-decoration: none;
+    list-style-type: none;
+    
+ }
+
+ #built-with-logo {
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+ }
+
+ #built-with-logo-html {
+    width: 6rem;
+    height: 4.5rem;
+    border: none;
+    box-shadow: none;
+    margin: 0;
  }
 
  .link-container {
@@ -309,65 +352,62 @@ h2 {
     margin-top: .5rem;
 }
 
+.dark-mode .link-container button {
+    background-color: #fefae0;
+}
+
 .link-container button:hover {
     cursor: pointer;
-    background-color: #2d6a4f;
+    background-color: #fefae0;
+    padding: 12px;
+    margin-bottom: .6rem;
+    margin-top: .4rem;
+}
+
+.dark-mode .link-container button:hover {
+    background-color: #606c38;
+    margin-bottom: .6rem;
+    margin-top: .4rem;
+    
 }
 
 .link-container button:active {
     box-shadow: none;
+    padding: 9px;
+    margin-top: .7rem;
 }
-
-
- #built-with {
-    margin: .8rem;
- }
-
- .project ul {
-    display:  inline-flex;
-    justify-content: space-evenly;
- }
-
- .project li {
-    text-decoration: none;
-    list-style-type: none;
-    margin-left: 1rem;
-    
- }
-
- #built-with-logo {
-    width: 3rem;
-    height: 3rem;
-    border: none;
-    box-shadow: none;
-    margin: 0;
- }
-
- @media only screen and (max-width: 530px) {
-    #built-with-logo {
-        width: 2rem;
-        height: 2rem;
-    }
-
-    .project li {
-    margin-left: .5rem;
-    }
- }
 
  @media only screen and (max-width: 530px) {
     .link-container p {
         font-size: 12px;
         padding: 5px;
     }
- }
 
- @media only screen and (max-width: 530px) {
+    #built-with-logo {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    #built-with-logo-html {
+        width: 4rem;
+        height: 3.3rem;
+    }
+
+    .project li {
+    margin-left: .5rem;
+    }
 
     .project img{
         width: 245px;
         height: 12rem;
     }
+
+    #project-description {
+        width: 245px;
+    }
 }
+
+
 
 @media only screen and (max-width: 375px) {
     .project img {
