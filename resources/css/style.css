@@ -13,12 +13,17 @@
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #f2f9f1;
+  }
+
+  .dark-mode::-webkit-scrollbar-track {
+    background: #2f3e46;
   }
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #888;
+
   }
   
   /* Handle on hover */
@@ -62,6 +67,10 @@ header {
     margin-left: 1rem;
 }
 
+hr {
+    margin-left: 0.5rem;
+}
+
 .dark-mode {
     background-color: #2f3e46;
     color: #fefae0;
@@ -79,6 +88,23 @@ header {
     background-color: #b6cdbd;
     box-shadow: 2px 2px 2px black;
     margin-top: 1rem;
+}
+
+.drkbtn:hover {
+    cursor: pointer;
+    background-color: #ddeedf;
+    padding: 12px;
+    margin-top: .85rem;
+}
+
+.drkbtn:active {
+    box-shadow: none;
+    padding: 11px;
+    margin-top: .9rem;
+}
+
+.dark-mode .drkbtn:hover {
+    background-color: #84a98c;
 }
 
 .dark-mode .drkbtn {
@@ -102,19 +128,6 @@ header {
 
 .dark-mode #sun {
     display: block;
-}
-
-.drkbtn:hover {
-    cursor: pointer;
-    background-color: #ddeedf;
-}
-
-.drkbtn:active {
-    box-shadow: none;
-}
-
-.dark-mode .drkbtn:hover {
-    background-color: #84a98c;
 }
 
 nav {
@@ -398,7 +411,7 @@ h2 {
 }
 
 .dark-mode .link-container button:hover {
-    background-color: #606c38;
+    background-color: #f6e7cb;
     margin-bottom: .6rem;
     margin-top: .4rem;
     
