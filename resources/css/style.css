@@ -33,7 +33,11 @@
 
 body{
     background-color: #f2f9f1;
-    font-family: "Space Mono", Georgia, 'Times New Roman', Times, serif;
+    font-family: "Poppins", Georgia, 'Times New Roman', Times, serif;
+}
+
+.name {
+    font-family: "Space Mono", sans-serif;
 }
 
 a {
@@ -184,7 +188,7 @@ nav li {
     padding: 1rem;    
 }
 
-.about span {
+.subtitle {
     font-weight: bold;
     margin: 1rem;
     font-size: 1.3rem;
@@ -199,6 +203,18 @@ nav li {
 .about p {
     padding-top: 1rem;
     margin-left: 1rem;
+    font-family: "Space mono", sans-serif;
+    font-size: 1.15rem;
+}
+
+.htmltags {
+    font-weight: normal;
+    font-family: "poppins", sans-serif;
+}
+
+.strikethru {
+    text-decoration: line-through;
+    font-size: .8rem;
 }
 
 .spacer-skill {
