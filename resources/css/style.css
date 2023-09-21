@@ -115,13 +115,13 @@ nav li {
     height: 20rem;
     margin: 0 2rem;
     border-radius: 1rem;
-    border: 1px solid #b6cdbd;
-    box-shadow: 5px 5px 5px #5c715e;
+    border: 1px solid black;
+    box-shadow: 3px 3px 3px;
 }
 
 .dark-mode .shuki {
-    box-shadow: 5px 5px 5px black;
-    border: 1px solid #354f52;
+    box-shadow: 3px 3px 3px black;
+    border: 1px solid black;
 }
 
 .about-me {
@@ -136,6 +136,13 @@ nav li {
     margin-right: 2rem;
     border-radius: 1rem;
     box-shadow: 2px 2px 2px;
+    padding: 1rem;    
+}
+
+.about span {
+    font-weight: bold;
+    margin: 1rem;
+    font-size: 1.3rem;
 }
 
 .dark-mode .about {
@@ -144,9 +151,9 @@ nav li {
     border: 1px solid #354f52;
 }
 
-.about h2,p {
+.about p {
+    padding-top: 1rem;
     margin-left: 1rem;
-    padding: 1rem;
 }
 
 .spacer-skill {
@@ -159,6 +166,12 @@ nav li {
 }
 
 h3 {
+    margin-top: 1rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2 {
     margin-top: 1rem;
     text-align: center;
     text-decoration: underline;
@@ -279,7 +292,6 @@ h3 {
     list-style-type: circle;
     list-style-position: outside;
     margin-left: 2rem;
-    margin-bottom: 8px;
     
  }
 
@@ -308,17 +320,39 @@ h3 {
 
 
  #built-with {
-    margin-top: 8px;
+    margin: .8rem;
+ }
+
+ .project ul {
+    display:  inline-flex;
+    justify-content: space-evenly;
  }
 
  .project li {
     text-decoration: none;
-    list-style-type: circle;
-    margin-left: 3rem;
+    list-style-type: none;
+    margin-left: 1rem;
     
  }
 
+ #built-with-logo {
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+ }
 
+ @media only screen and (max-width: 530px) {
+    #built-with-logo {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .project li {
+    margin-left: .5rem;
+    }
+ }
 
  @media only screen and (max-width: 530px) {
     .link-container p {
