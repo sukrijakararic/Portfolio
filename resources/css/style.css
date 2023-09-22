@@ -34,6 +34,19 @@
 body{
     background-color: #f2f9f1;
     font-family: "Poppins", Georgia, 'Times New Roman', Times, serif;
+    animation: changeBack .2s linear;
+    color: black;
+}
+
+@keyframes changeBack {
+    from {
+        background-color: #2f3e46;
+    }
+     to {
+        background-color: #f2f9f1;
+        color: black;
+     }
+    
 }
 
 .name {
@@ -57,10 +70,13 @@ a:hover {
     top: 0;
     z-index: 1;
     background-color: #f2f9f1;
+    animation: changeBack .2s linear;
 }
 
 .dark-mode .sticky {
-    background-color: #2f3e46
+    background-color: #2f3e46;
+    animation: changeBg .2s linear;
+    
 }
 
 header {
@@ -78,11 +94,27 @@ hr {
 .dark-mode {
     background-color: #2f3e46;
     color: #fefae0;
-    
+    animation: changeBg .2s linear;
+}
+
+@keyframes changeBg {
+ from {
+        background-color: #f2f9f1;
+        color: black;
+    }
+to {
+   background-color: #2f3e46;
+   color: #fefae0;
+}
+}
+
+h1 {
+    animation: changeBack .2s linear;
 }
 
 .dark-mode h1 {
     color: #cad2c5;
+    animation: changeBg .2s linear;
 }
 
 .drkbtn {
@@ -149,10 +181,12 @@ nav li {
 .spacer-nav {
     border: 1px solid #5c715e;
     margin: 0 1rem;
+    animation: changeBack .2s linear;
 }
 
 .dark-mode .spacer-nav {
     border: 1px solid #cad2c5;
+    animation: changeBg .2s linear;
 }
 
 
@@ -171,6 +205,7 @@ nav li {
 .dark-mode .shuki {
     box-shadow: 3px 3px 3px black;
     border: 1px solid black;
+    animation: changeBg .2s linear;
 }
 
 .about-me {
@@ -198,6 +233,7 @@ nav li {
     background-color: #52796f;
     box-shadow: 2px 2px 2px black;
     border: 1px solid #354f52;
+    
 }
 
 .about p {
@@ -484,4 +520,162 @@ h2 {
         padding: 2rem;
     }
     
+}
+
+/* The styling for contact */
+
+.spacer-contact {
+    border: 1px solid #5c715e;
+    margin: 0 1rem 1rem;
+}
+
+.dark-mode .spacer-contact {
+    border: 1px solid #cad2c5;
+  }
+
+
+.contact {
+    border: 1px solid #5c715e;
+    background-color: #b6cdbd;
+    margin: 1rem 2rem;
+    border-radius: 2rem;
+    box-shadow: 2px 2px 2px;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.dark-mode .contact {
+    background-color: #52796f;
+    box-shadow: 2px 2px 2px black;
+    border: 1px solid #354f52;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: start;
+    width: 35rem;
+}
+
+
+label {
+    margin-left: 3rem;
+}
+
+#name, #email {
+    width: 20rem;
+    height: 3rem;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 2px;
+    font-family: "Roboto",sans-serif;
+    font-size: 1rem;
+    margin: 1rem 1rem;
+}
+
+#message {
+    border-radius: 2rem;
+    resize: none;
+    padding: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1rem;
+}
+
+#submit {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 2px;
+    font-family: "Roboto",sans-serif;
+    font-size: 1rem;
+    margin: 1rem 3rem;
+}
+
+.personals {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 3rem;
+}
+
+.connectpic {
+    width: 5rem;
+    height: 5rem;
+}
+
+input {
+    text-align: center;
+}
+
+@media only screen and (max-width: 595px) {
+    #message {
+        width: 401px;
+    }
+     form {
+        width: 401px;
+     }
+     label {
+        margin-left: 0;
+     }
+}
+
+@media only screen and (max-width: 490px) {
+
+    #message {
+        width: 301px;
+    }
+
+    form {
+        align-items: center;
+        width: 301px;
+        margin-left: 2rem;
+     }
+     label {
+        margin-left: 0;
+     }
+
+}
+
+@media only screen and (max-width: 500px) {
+   
+    #name, #email {
+        width: 14rem;
+    }
+
+    #message {
+        width: 301px;
+    }
+
+    form {
+        align-items: center;
+        width: 301px;
+        margin-left: 1rem;
+     }
+     label {
+        margin-left: 0;
+     }
+}
+
+@media only screen and (max-width: 380px) {
+    
+    #name, #email {
+        width: 15rem;
+    }
+    
+    #message {
+     width: 250px;
+    }
+
+    form {
+        align-items: center;
+        width: 201px;
+        margin-left: 2rem;
+     }
+     label {
+        margin-left: 0;
+     }
 }

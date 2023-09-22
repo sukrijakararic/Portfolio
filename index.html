@@ -29,7 +29,7 @@
         <button id="dark-mode" class="drkbtn"><img id="moon" src="./resources/images/moon1.png"><img id="sun" src="./resources/images/sun1.png" alt="sun icon"></button>
             <li><a href="#About">About Me</a></li>
             <li><a href="#proj">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     
@@ -77,14 +77,15 @@
         <img src="./resources/images/gitlogo.png" alt="A logo of Git">
         <img src="./resources/images/githublogo.png" alt="A logo of Github">
         <img src="./resources/images/bashlogo.png" alt="A logo of Bash">
-
+        <div id="proj"></div>
     </div>
 
-    <div class="spacer-projects" role="complementary"></div>
+    <div class="spacer-projects" role="complementary" ></div>
 
     <h2 data-aos="fade-left">Check out my work!</h2>
 
-    <div data-aos="fade-up" class="projects-container" role="complementary" id="proj">
+    <div data-aos="fade-up" class="projects-container" role="complementary">
+
         <div class="project" data-aos="fade-zoom-in"
         data-aos-easing="ease-in-back"
         data-aos-delay="300"
@@ -168,6 +169,42 @@
             </div>
         </div>
     </div>
+
+    <div class="spacer-contact" id="contact" role="complementary"></div>
+
+    <h2 data-aos="fade-right">Contact Me!</h2>
+
+    <section class="contact" data-aos="fade-up">
+
+            <form action="">
+
+            <label for="name">Name:</label>
+            
+            <input type="text" name="name" id="name" required pattern="[A-Za-Z]">
+
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+
+            <label for="message">Send me a message :)</label>
+            
+            <textarea name="message" id="message" cols="50" rows="10" minlength="20" maxlength="500" required></textarea>
+
+            <input type="submit" name="submit" id="submit">
+
+            </form>
+
+            <div class="personals">
+
+                <span class="connect">Connect with me</span>
+                
+                <span class="connect">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/sukrija-kararic-20a57b270/" target="_blank"><img class="connectpic" src="./resources/images/linkedinlogo.png" alt="Logo of linkedin"></a>
+                
+                <span class="connect">Github</span>
+                
+                <a href="https://github.com/sukrijakararic" target="_blank"><img class="connectpic" src="./resources/images/githublogo.png" alt=""></a>
+            </div>
+    </section>
 
         <script src="script.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
