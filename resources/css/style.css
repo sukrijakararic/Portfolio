@@ -541,9 +541,6 @@ h2 {
     border-radius: 2rem;
     box-shadow: 2px 2px 2px;
     padding: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .dark-mode .contact {
@@ -557,14 +554,10 @@ form {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    align-items: start;
-    width: 35rem;
+    align-items: center;
+    
 }
 
-
-label {
-    margin-left: 3rem;
-}
 
 #name, #email {
     width: 20rem;
@@ -582,6 +575,7 @@ label {
     padding: 1rem;
     font-family: "Roboto", sans-serif;
     font-size: 1.1rem;
+    box-shadow: 2px 2px 2px;
 }
 
 #submit {
@@ -594,12 +588,30 @@ label {
     margin: 1rem 3rem;
 }
 
+#connect1 {
+    width: 100%;
+    text-align: center;
+    font-family: "roboto",sans-serif;
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
 .personals {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.personals div {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-right: 3rem;
+    margin: 0rem 5rem;
+}
+
+.connect {
+    margin: .5rem;
+    text-align: center;
 }
 
 .connectpic {
@@ -615,29 +627,14 @@ input {
     #message {
         width: 401px;
     }
-     form {
-        width: 401px;
-     }
-     label {
-        margin-left: 0;
-     }
-}
 
-@media only screen and (max-width: 490px) {
-
-    #message {
-        width: 301px;
+    .personals div {
+        margin: 0 3rem;
     }
 
-    form {
-        align-items: center;
-        width: 301px;
-        margin-left: 2rem;
-     }
      label {
         margin-left: 0;
      }
-
 }
 
 @media only screen and (max-width: 500px) {
@@ -660,7 +657,31 @@ input {
      }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 490px) {
+
+    #message {
+        width: 301px;
+    }
+
+    .personals div {
+        margin: 0 2rem;
+    }
+
+     label {
+        margin-left: 0;
+     }
+
+}
+
+@media only screen and (max-width: 432px) {
+
+    #message {
+        width: 250px;
+    }
+
+}
+
+@media only screen and (max-width: 420px) {
     
     #name, #email {
         width: 15rem;
@@ -670,12 +691,41 @@ input {
      width: 250px;
     }
 
+    .personals div {
+        margin: 0 1rem;
+    }
+
+    .connectpic {
+        width: 4rem;
+        height: 4rem;
+        margin-left: .4rem;
+    }
+    
+
     form {
         align-items: center;
         width: 201px;
-        margin-left: 2rem;
+        margin-left: 1.5rem;
      }
      label {
         margin-left: 0;
      }
+}
+
+/* Footer section */
+
+footer {
+
+    padding: 1rem;
+}
+
+.dark-mode footer {
+    background-color: #52796f;
+    box-shadow: 2px 2px 2px black;
+    border: 1px solid #354f52;
+}
+
+footer span {
+    text-align: center;
+    width: 100%;
 }
