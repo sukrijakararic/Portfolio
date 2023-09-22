@@ -588,6 +588,10 @@ form {
     margin: 1rem 3rem;
 }
 
+#submit:hover {
+    cursor: pointer;
+}
+
 #connect1 {
     width: 100%;
     text-align: center;
