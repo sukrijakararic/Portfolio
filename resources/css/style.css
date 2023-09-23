@@ -709,7 +709,7 @@ input {
     form {
         align-items: center;
         width: 201px;
-        margin-left: 1.5rem;
+        margin-left: 3rem;
      }
      label {
         margin-left: 0;
@@ -721,12 +721,6 @@ input {
 footer {
 
     padding: 1rem;
-}
-
-.dark-mode footer {
-    background-color: #52796f;
-    box-shadow: 2px 2px 2px black;
-    border: 1px solid #354f52;
 }
 
 footer span {
