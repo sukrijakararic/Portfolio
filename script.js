@@ -9,5 +9,4 @@ function darkmode () {
 };
 
 
-
 dark.addEventListener('click',darkmode)
